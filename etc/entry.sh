@@ -4,4 +4,4 @@ bash "${STEAMCMDDIR}/steamcmd.sh" +login anonymous \
 				+app_update "${STEAMAPPID}" \
 				+quit
 				
-bash "${STEAMAPPDIR}/SquadGameServer.sh"
+bash "${STEAMAPPDIR}/start_server.sh"
