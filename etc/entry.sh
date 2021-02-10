@@ -4,6 +4,4 @@ bash "${STEAMCMDDIR}/steamcmd.sh" +login anonymous \
 				+app_update "${STEAMAPPID}" validate \
 				+quit
 
-cd "${STEAMAPPDIR}"
-				
 bash "${HOMEDIR}/start_valheim.sh"
