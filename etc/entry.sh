@@ -6,4 +6,4 @@ bash "${STEAMCMDDIR}/steamcmd.sh" +login anonymous \
 
 cd "${STEAMAPPDIR}"
 				
-bash "${STEAMAPPDIR}/start_valheim.sh"
+bash "${HOMEDIR}/start_valheim.sh"
