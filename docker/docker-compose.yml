@@ -1,0 +1,20 @@
+version: "3.6"
+services:
+
+  valheim:
+    hostname: valheim
+    container_name: valheim
+    image: valheim:latest
+    user: ${PUID}:${PGID}
+    restart: unless-stopped
+    ports:
+      - 2456:2456/udp
+      - 2457:2457/udp
+      - 2458:2458/udp
+    # password hints: at least 5 chars, doesnt allow ServerName/World in it!
+    environment:
+      - SERVER_NAME=ServerName
+      - SERVER_WORLD=WorldName
+      - SERVER_PASSWORD=Password
+    volumes:
+      - /your/local/dir:/home/steam/valheim-dedicated
