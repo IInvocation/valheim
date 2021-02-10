@@ -13,5 +13,6 @@ while true; do
   -port 2456 \
   -world ${SERVER_WORLD} \
   -password ${SERVER_PASSWORD} \
-  -public 1
+  -public 1 \
+  > server.log
 done
